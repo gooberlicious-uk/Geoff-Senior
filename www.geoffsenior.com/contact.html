@@ -105,64 +105,40 @@ class="ccm-custom-style-pagefooter gallery-area"
             
             
 
-            <form enctype="multipart/form-data" class="form-stacked" method="post" action="https://www.geoffsenior.com/contact/submit/1532#form1532">
-            
-<input type="hidden" name="express_form_id" value="103ffc0e-3bc4-11e7-95f5-706bc7a6e898">
-<input type="hidden" name="ccm_token" value="1791538508:5e8e5f3dccf8d7b0a1a06dcf9c921f15" />
+            <form class="form-stacked web3form" method="POST" action="https://api.web3forms.com/submit" data-success="Thanks, your message has been sent. I'll be in touch soon.">
+<input type="hidden" name="access_key" value="ae04675b-58c8-4645-a029-fb4b992e3aad">
+<input type="hidden" name="subject" value="New contact message from geoffsenior.com">
+<input type="hidden" name="from_name" value="geoffsenior.com">
+<input type="checkbox" name="botcheck" style="display: none;" tabindex="-1" autocomplete="off">
 <div class="ccm-dashboard-express-form">
-    
         <fieldset>
-            
-            
 <div class="form-group">
-            <label class="control-label">Your name</label>
+            <label class="control-label" for="name">Your name</label>
     
             <span class="text-muted small">Required</span>
     
-    <input type="text" id="akID[24][value]" name="akID[24][value]" value="" placeholder="" class="form-control ccm-input-text" /></div>
+    <input type="text" id="name" name="name" autocomplete="name" required class="form-control" />
+</div>
 
 <div class="form-group">
-            <label class="control-label">Your email address</label>
+            <label class="control-label" for="email">Your email address</label>
     
             <span class="text-muted small">Required</span>
     
-    <input type="email" id="akID[25][value]" name="akID[25][value]" value="" class="form-control ccm-input-email" /></div>
+    <input type="email" id="email" name="email" autocomplete="email" required class="form-control" />
+</div>
 
 <div class="form-group">
-            <label class="control-label">Your message</label>
+            <label class="control-label" for="message">Your message</label>
     
-    
-    
-    <textarea id="akID[26][value]" name="akID[26][value]" rows="5" class="form-control"></textarea>
+    <textarea id="message" name="message" rows="5" class="form-control"></textarea>
 </div>
         </fieldset>
     </div>
-                <div class="form-group captcha">
-                                        <div></div>
-                    <div><div id="ecr6ac8b54cb3898" class="g-recaptcha ecRecaptcha" data-sitekey="6Lf6EKsZAAAAADRKVJ5mCw2VTl5VlYQFkboRx8bi" data-theme="dark"></div><noscript>
-          <div style="width: 302px; height: 352px;">
-            <div style="width: 302px; height: 352px; position: relative;">
-              <div style="width: 302px; height: 352px; position: absolute;">
-                <iframe src="https://www.google.com/recaptcha/api/fallback?k=6Lf6EKsZAAAAADRKVJ5mCw2VTl5VlYQFkboRx8bi"
-                        frameborder="0" scrolling="no"
-                        style="width: 302px; height:352px; border-style: none;">
-                </iframe>
-              </div>
-              <div style="width: 250px; height: 80px; position: absolute; border-style: none;
-                          bottom: 21px; left: 25px; margin: 0; padding: 0; right: 25px;">
-                <textarea id="g-recaptcha-response" name="g-recaptcha-response"
-                          class="g-recaptcha-response"
-                          style="width: 250px; height: 80px; border: 1px solid #c1c1c1;
-                                 margin: 0; padding: 0; resize: none;" value=""></textarea>
-              </div>
-            </div>
-          </div>
-        </noscript></div>
-                </div>
-            
             <div class="form-actions">
-                <button type="submit" name="Submit" class="btn btn-primary">Send</button>
+                <button type="submit" class="btn btn-primary">Send</button>
             </div>
+            <div class="form-status" style="margin-top: 15px;" role="status" aria-live="polite"></div>
 
             </form>
 
@@ -233,7 +209,7 @@ class="ccm-custom-style-pagefooter gallery-area"
   ga('send', 'pageview');
 
 </script><script type="text/javascript" src="application/files/cache/js/0e5a81f256461e3137c05863caf33cee34ec2aec.js" data-source="/updates/concrete5-8.2.1_remote_updater/concrete/js/picturefill.js /packages/ec_recaptcha/assets/js/render.js"></script>
-<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=ecRecaptcha&amp;render=explicit"></script>
+<script type="text/javascript" src="js/web3forms.js"></script>
 
 </body>
 
