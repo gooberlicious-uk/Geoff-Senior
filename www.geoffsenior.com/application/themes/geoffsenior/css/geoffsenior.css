@@ -406,3 +406,17 @@ div.ccm-page .ccm-block-social-links li a {
 }
 
 
+/* Inline form validation errors (see js/web3forms.js) */
+div.ccm-page .form-group.has-error .control-label {
+	color: #ff6b6b;
+}
+div.ccm-page .form-group .field-error {
+	display: block;
+	margin-top: 5px;
+	color: #ff6b6b;
+	font-size: 0.9em;
+}
+div.ccm-page .form-group.has-error .form-control {
+	border-color: #ff6b6b;
+	box-shadow: 0 0 0 1px #ff6b6b;
+}
